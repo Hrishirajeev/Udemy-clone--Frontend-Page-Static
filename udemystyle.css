@@ -127,7 +127,9 @@ body{
     margin-top: 10px;
 }
 .course_card{
-    width: 270px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .course_card img{
     height:50%;
@@ -175,3 +177,25 @@ body{
     align-items: center;
     justify-content: space-between;  
 }
+
+/* media queries */
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        .course_card{
+            flex-basis: 40%;
+        }
+        .category{
+            display: none;
+        }
+        .navbar_section_two,.navbar_section_three{
+            display: none;
+        }
+    }
+}
+
